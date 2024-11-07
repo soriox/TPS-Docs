@@ -14,36 +14,16 @@
         "title": "Free Resources",
         "href": "/resources",
         "icon": "link"
-      }
-    ]
-  },
-  {
-    "group": "Features",
-    "pages": [
-      {
-        "title": "Weapon System",
-        "href": "/features/weapon-system",
-        "icon": "gun"
       },
       {
-        "title": "Throwables/Grenades",
-        "href": "/features/throwables",
-        "icon": "bomb"
+        "title": "FAQ",
+        "href": "/faq",
+        "icon": "question"
       },
       {
-        "title": "Destruction",
-        "href": "/features/destruction",
-        "icon": "bomb"
-      },
-      {
-        "title": "Health",
-        "href": "/features/health",
-        "icon": "heart"
-      },
-      {
-        "title": "Interactions",
-        "href": "/features/interactions",
-        "icon": "door-open"
+        "title": "Roadmap",
+        "href": "/roadmap",
+        "icon": "timeline"
       }
     ]
   },
@@ -61,19 +41,44 @@
         "icon": "bomb"
       },
       {
-        "title": "Destruction",
-        "href": "/features/destruction",
-        "icon": "bomb"
-      },
-      {
         "title": "Health",
         "href": "/features/health",
         "icon": "heart"
       },
       {
-        "title": "Interactions",
+        "title": "Hit Receiver",
+        "href": "/features/health",
+        "icon": "bullseye"
+      },
+      {
+        "title": "Interactor",
         "href": "/features/interactions",
+        "icon": "video"
+      },
+      {
+        "title": "Interactions",
+        "href": "/features/interaction",
         "icon": "door-open"
+      }
+    ]
+  },
+  {
+    "group": "Data",
+    "pages": [
+      {
+        "title": "Enums",
+        "href": "/data/enums",
+        "icon": "list"
+      },
+      {
+        "title": "Weapon Data",
+        "href": "/data/weapons",
+        "icon": "database"
+      },
+      {
+        "title": "Grenade Data",
+        "href": "/data/grenades",
+        "icon": "database"
       }
     ]
   }
