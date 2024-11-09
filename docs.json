@@ -8,14 +8,14 @@
       "href": "/"
     },
     {
-      "id": "examples",
-      "title": "Examples",
-      "href": "/examples"
-    },
-    {
       "id": "patch-notes",
       "title": "Patch Notes",
       "href": "/patch-notes"
+    },
+    {
+      "id": "tutorials",
+      "title": "Tutorials",
+      "href": "/tutorials"
     }
   ],
   "sidebar": [
@@ -216,11 +216,6 @@
                 "icon": "f"
               },
               {
-                "title": "Line_Trace()",
-                "href": "/components/WeaponSystem/Line_Trace",
-                "icon": "f"
-              },
-              {
                 "title": "Fire_FX()",
                 "href": "/components/WeaponSystem/Fire_FX",
                 "icon": "f"
@@ -273,11 +268,6 @@
               {
                 "title": "FireCheck()",
                 "href": "/components/WeaponSystem/FireCheck",
-                "icon": "f"
-              },
-              {
-                "title": "UI()",
-                "href": "/components/WeaponSystem/UI",
                 "icon": "f"
               },
               {
@@ -346,11 +336,6 @@
           {
             "title": "WeaponType",
             "href": "/enums/WeaponType",
-            "icon": "list"
-          },
-          {
-            "title": "Weapon_State",
-            "href": "/enums/Weapon_State",
             "icon": "list"
           }
         ]
