@@ -1,0 +1,45 @@
+---
+title: BP_ThirdPersonCharacter
+description: Base third person character class
+---
+
+## Parent Class
+
+[ACharacter](https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/GameFramework/ACharacter)
+
+---
+
+# Remarks
+
+The BP_ThirdPersonCharacter holds the logic for input, moving, crouching, rolling, etc. It also holds the [Weapon System](), [Health Component](), and [Interaction Component]() by default.
+
+Some data can also be altered the change the feel of player's camera.
+
+---
+
+# Properties
+
+![Properties](/assets/d47f68498548c98922b67d7fb6618e38.png)
+
+---
+
+# Functions
+
+- [ImpactOnLand()](classes/BP_ThirdPersonCharacter/ImpactOnLand)
+- [StartSprint()](classes/BP_ThirdPersonCharacter/StartSprint)
+- [StopSprint()](classes/BP_ThirdPersonCharacter/StopSprint)
+- [StartRagdoll()](classes/BP_ThirdPersonCharacter/StartRagdoll)
+- [Melee(MeleeRadius:Float)](classes/BP_ThirdPersonCharacter/Melee)
+- [Die()](classes/BP_ThirdPersonCharacter/Die)
+- [Unpossess()](classes/BP_ThirdPersonCharacter/Unpossess)
+- [Repossess()](classes/BP_ThirdPersonCharacter/Repossess)
+- [ClearWeaponUI()](classes/BP_ThirdPersonCharacter/ClearWeaponUI)
+- [AddWeaponUI(WeaponData:BP_WeaponData)](classes/BP_ThirdPersonCharacter/AddWeaponUI)
+
+---
+
+# Custom Components
+
+- [WeaponSystem](components/WeaponSystem)
+- [HealthComponent](components/HealthComponent)
+- [BP_Interactor](components/BP_Interactor)

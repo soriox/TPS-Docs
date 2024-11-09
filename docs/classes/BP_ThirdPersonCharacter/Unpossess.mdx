@@ -1,0 +1,18 @@
+---
+title: Unpossess()
+description: Handles player unpossession. This is called just before possessing another pawn.
+---
+
+# Remarks
+
+This will turn off things like the player's visibility and disable the [Interaction Component](/components/BP_Interactor) while we possess another pawn.
+
+--- 
+
+# Actions
+
+1. Calls [ClearWeaponUI()](/classes/BP_ThirdPersonCharacter/ClearWeaponUI) to clear the weapon UI currently on screen
+2. Set collision to "No Collision"
+3. Turns off the player pawn's visibility
+4. Sets the Interactor Active to false on the [Interaction Component](/components/BP_Interactor)
+5. Stops the last interaction that was happening (if still in progress) by calling [Stop Last Interaction](/components/BP_Interactor/StopLastInteraction)

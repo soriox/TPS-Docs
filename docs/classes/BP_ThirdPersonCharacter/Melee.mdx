@@ -1,0 +1,24 @@
+---
+title: Melee(MeleeRadius:Float)
+description: Handles melee logic for the player
+---
+
+# Parameters
+
+MeleeRadius (Float) - Sets the Melee's detection radius for applying damage
+
+---
+
+# Remarks
+
+This is used to melee other characters within in the game. It forms a sphere trace on the right hand using a radius as a parameter. If another player is in the radius of the Melee, it will apply damage to the player.
+
+---
+
+# Actions
+
+1. Casts a sphere trace from the hand_r socket
+2. Applies damage to the player's health component if a player is found
+3. Plays hitmarker sound if it is a player
+4. Creates hit marker widget and display it in the UI
+5. Plays kill sound effect if the player died from the melee

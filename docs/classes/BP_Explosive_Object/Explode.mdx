@@ -1,0 +1,15 @@
+---
+title: Explode()
+description: Trigger explosion enivornment object
+---
+
+# Actions
+
+1. Triggers [OnExplosion](/classes/BP_Explosive_Object/OnExplosion) Event.
+2. Plays explosion sound.
+3. Spawns explosion particle.
+4. Multi Sphere Trace By Channel to detect players and objects
+5. Loop through collision bodies and [Apply Damage]() to player's [HealthComponent](/components/HealthComponent) if cast to [BP_ThirdPersonCharacter](/classes/BP_ThirdPersonCharacter) is successful
+6. Apply damage to environment object using built in "Apply Damage" function if cast to [BP_ThirdPersonCharacter](/classes/BP_ThirdPersonCharacter) fails.
+7. Check if physics impluse should be used.
+8. If physics impluse is enabled, and the collision body is simulating physics, the apply upward physics impulse at location of explosion.

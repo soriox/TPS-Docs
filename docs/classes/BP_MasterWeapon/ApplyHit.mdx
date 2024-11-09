@@ -1,0 +1,25 @@
+---
+title: ApplyHit()
+description: Apply bullet hit to the player
+---
+
+# Remarks
+
+Accesses the [ApplyDamage]() function in the [Health Component]() of a player or the built in Apply Damage function in the editor if the hit actor is not a player.
+
+--- 
+
+# Actions
+
+1. Search for [Hit Receiver]() on hit object
+2. Play hit marker sound if the Hit Receiver component is found on the hit actor, if not, move on.
+3. Cast hit to [BP_ThirdPersonCharacter]()
+4. If cast fails apply damage using built-in [Apply Damage]() function
+5. If cast does not fail, check if player is dead.
+6. If player if still alive, apply damage the hit player's [Health Component]()
+7. Play hit marker sound.
+
+# Return values
+
+- KilledPlayer:Boolean
+- ValidHit:Boolean

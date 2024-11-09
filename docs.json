@@ -1,9 +1,27 @@
 {
-  "name": "Warpath Premium - v0.06",
-  "description": "An Unreal Engine 5 third person shooter kit",
+  "name": "Soriox's TPS Kit Premium - v0.06",
+  "description": "An Unreal Engine 5 third person shooter kit created by Soriox",
+  "tabs": [
+    {
+      "id": "root",
+      "title": "Documentation",
+      "href": "/"
+    },
+    {
+      "id": "examples",
+      "title": "Examples",
+      "href": "/examples"
+    },
+    {
+      "id": "patch-notes",
+      "title": "Patch Notes",
+      "href": "/patch-notes"
+    }
+  ],
   "sidebar": [
   {
     "group": "Getting Started",
+    "tab": "root",
     "pages": [
       {
         "title": "Welcome",
@@ -14,73 +32,340 @@
         "title": "Free Resources",
         "href": "/resources",
         "icon": "link"
-      },
-      {
-        "title": "FAQ",
-        "href": "/faq",
-        "icon": "question"
-      },
-      {
-        "title": "Roadmap",
-        "href": "/roadmap",
-        "icon": "timeline"
       }
     ]
   },
   {
-    "group": "Components",
+    "group": "Master Blueprints",
+    "tab": "root",
     "pages": [
       {
-        "title": "Weapon System",
-        "href": "/features/weapon-system",
-        "icon": "gun"
+        "group": "Blueprints",
+        "icon": "circle-nodes",
+        "pages": [
+          {
+            "group": "BP_Explosive_Object",
+            "href": "/classes/BP_Explosive_Object",
+            "pages": [
+              {
+                "title": "Explode()",
+                "href": "/classes/BP_Explosive_Object/Explode",
+                "icon": "f"
+              },
+              {
+                "title": "OnExplosion",
+                "href": "/classes/BP_Explosive_Object/OnExplosion",
+                "icon": "arrow-right"
+              }
+            ]
+          },
+          {
+            "group": "BP_ThirdPersonCharacter",
+            "href": "/classes/BP_ThirdPersonCharacter",
+            "pages": [
+              {
+                "title": "ImpactOnLand()",
+                "href": "/classes/BP_ThirdPersonCharacter/ImpactOnLand",
+                "icon": "f"
+              },
+              {
+                "title": "StartSprint()",
+                "href": "/classes/BP_ThirdPersonCharacter/StartSprint",
+                "icon": "f"
+              },
+              {
+                "title": "StopSprint()",
+                "href": "/classes/BP_ThirdPersonCharacter/StopSprint",
+                "icon": "f"
+              },
+              {
+                "title": "StartRagdoll()",
+                "href": "/classes/BP_ThirdPersonCharacter/StartRagdoll",
+                "icon": "f"
+              },
+              {
+                "title": "Melee()",
+                "href": "/classes/BP_ThirdPersonCharacter/Melee",
+                "icon": "f"
+              },
+              {
+                "title": "Die()",
+                "href": "/classes/BP_ThirdPersonCharacter/Die",
+                "icon": "f"
+              },
+              {
+                "title": "Repossess()",
+                "href": "/classes/BP_ThirdPersonCharacter/Repossess",
+                "icon": "f"
+              },
+              {
+                "title": "Unpossess()",
+                "href": "/classes/BP_ThirdPersonCharacter/Unpossess",
+                "icon": "f"
+              },
+              {
+                "title": "ClearWeaponUI()",
+                "href": "/classes/BP_ThirdPersonCharacter/ClearWeaponUI",
+                "icon": "f"
+              },
+              {
+                "title": "AddWeaponUI()",
+                "href": "/classes/BP_ThirdPersonCharacter/AddWeaponUI",
+                "icon": "f"
+              }
+            ]
+          },
+          {
+            "title": "BP_Interaction",
+            "href": "/classes/BP_Interaction"
+          },
+          {
+            "group": "BP_MasterWeapon",
+            "href": "/classes/BP_MasterWeapon",
+            "pages": [
+              {
+                "title": "ApplyHit()",
+                "href": "/classes/BP_MasterWeapon/ApplyHit",
+                "icon": "f"
+              }
+            ]
+          },
+          {
+            "title": "BP_Throwable_Base",
+            "href": "/classes/BP_Throwable_Base"
+          }
+        ]
       },
       {
-        "title": "Throwables/Grenades",
-        "href": "/features/throwables",
-        "icon": "bomb"
-      },
-      {
-        "title": "Health",
-        "href": "/features/health",
-        "icon": "heart"
-      },
-      {
-        "title": "Hit Receiver",
-        "href": "/features/health",
-        "icon": "bullseye"
-      },
-      {
-        "title": "Interactor",
-        "href": "/features/interactions",
-        "icon": "video"
-      },
-      {
-        "title": "Interactions",
-        "href": "/features/interaction",
-        "icon": "door-open"
+        "group": "Components",
+        "icon": "box",
+        "pages": [
+          {
+            "group": "BP_Interactor",
+            "href": "/components/BP_Interactor",
+            "pages": [
+              {
+                "title": "GetInteractionType()",
+                "href": "/components/BP_Interactor/GetInteractionType",
+                "icon": "f"
+              },
+              {
+                "title": "Reset()",
+                "href": "/components/BP_Interactor/Reset",
+                "icon": "f"
+              },
+              {
+                "title": "StopLastInteraction()",
+                "href": "/components/BP_Interactor/StopLastInteraction",
+                "icon": "f"
+              }
+            ]
+          },
+          {
+            "title": "BP_InteractionComponent",
+            "href": "/components/BP_InteractionComponent"
+          },
+          {
+            "group": "HealthComponent",
+            "href": "/components/HealthComponent",
+            "pages": [
+              {
+                "title": "ApplyDamage()",
+                "href": "/components/HealthComponent/ApplyDamage",
+                "icon": "f"
+              }
+            ]
+          },
+          {
+            "title": "HitReceiverComponent",
+            "href": "/components/HitReceiverComponent"
+          },
+          {
+            "group": "ObjectHealthComponent",
+            "href": "/components/ObjectHealthComponent",
+            "pages": [
+              {
+                "title": "TakeDamage()",
+                "href": "/components/ObjectHealthComponent/TakeDamage",
+                "icon": "f"
+              }
+            ]
+          },
+          {
+            "group": "WeaponSystem",
+            "href": "/components/WeaponSystem",
+            "pages": [
+              {
+                "title": "Rifle_Equip()",
+                "href": "/components/WeaponSystem/Rifle_Equip",
+                "icon": "f"
+              },
+              {
+                "title": "Rifle_Unequip()",
+                "href": "/components/WeaponSystem/Rifle_Unequip",
+                "icon": "f"
+              },
+              {
+                "title": "Pistol_Equip()",
+                "href": "/components/WeaponSystem/Pistol_Equip",
+                "icon": "f"
+              },
+              {
+                "title": "Pistol_Unequip()",
+                "href": "/components/WeaponSystem/Pistol_Unequip",
+                "icon": "f"
+              },
+              {
+                "title": "Line_Trace()",
+                "href": "/components/WeaponSystem/Line_Trace",
+                "icon": "f"
+              },
+              {
+                "title": "Fire_FX()",
+                "href": "/components/WeaponSystem/Fire_FX",
+                "icon": "f"
+              },
+              {
+                "title": "Muzzle_VFX()",
+                "href": "/components/WeaponSystem/Muzzle_VFX",
+                "icon": "f"
+              },
+              {
+                "title": "Fire_Anim()",
+                "href": "/components/WeaponSystem/Fire_Anim",
+                "icon": "f"
+              },
+              {
+                "title": "Fire_Montage()",
+                "href": "/components/WeaponSystem/Fire_Montage",
+                "icon": "f"
+              },
+              {
+                "title": "Impact_VFX()",
+                "href": "/components/WeaponSystem/Impact_VFX",
+                "icon": "f"
+              },
+              {
+                "title": "Bullet_Trace()",
+                "href": "/components/WeaponSystem/Bullet_Trace",
+                "icon": "f"
+              },
+              {
+                "title": "Impact_Decal()",
+                "href": "/components/WeaponSystem/Impact_Decal",
+                "icon": "f"
+              },
+              {
+                "title": "Reload_Anim()",
+                "href": "/components/WeaponSystem/Reload_Anim",
+                "icon": "f"
+              },
+              {
+                "title": "Reload_Montage()",
+                "href": "/components/WeaponSystem/Reload_Montage",
+                "icon": "f"
+              },
+              {
+                "title": "CheckAmmo()",
+                "href": "/components/WeaponSystem/CheckAmmo",
+                "icon": "f"
+              },
+              {
+                "title": "FireCheck()",
+                "href": "/components/WeaponSystem/FireCheck",
+                "icon": "f"
+              },
+              {
+                "title": "UI()",
+                "href": "/components/WeaponSystem/UI",
+                "icon": "f"
+              },
+              {
+                "title": "ReloadCheck()",
+                "href": "/components/WeaponSystem/ReloadCheck",
+                "icon": "f"
+              },
+              {
+                "title": "Empty_FX()",
+                "href": "/components/WeaponSystem/Empty_FX",
+                "icon": "f"
+              },
+              {
+                "title": "Empty_Montage()",
+                "href": "/components/WeaponSystem/Empty_Montage",
+                "icon": "f"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   {
     "group": "Data",
+    "tab": "root",
     "pages": [
       {
-        "title": "Enums",
-        "href": "/data/enums",
-        "icon": "list"
+        "group": "Enums",
+        "pages": [
+          {
+            "title": "AmmoType",
+            "href": "/enums/AmmoType",
+            "icon": "list"
+          },
+          {
+            "title": "Animation_State",
+            "href": "/enums/Animation_State",
+            "icon": "list"
+          },
+          {
+            "title": "FireMode",
+            "href": "/enums/FireMode",
+            "icon": "list"
+          },
+          {
+            "title": "InteractionMethod",
+            "href": "/enums/InteractionMethod",
+            "icon": "list"
+          },
+          {
+            "title": "InteractionType",
+            "href": "/enums/InteractionType",
+            "icon": "list"
+          },
+          {
+            "title": "Land_State",
+            "href": "/enums/Land_State",
+            "icon": "list"
+          },
+          {
+            "title": "Movement_State",
+            "href": "/enums/Movement_State",
+            "icon": "list"
+          },
+          {
+            "title": "WeaponType",
+            "href": "/enums/WeaponType",
+            "icon": "list"
+          },
+          {
+            "title": "Weapon_State",
+            "href": "/enums/Weapon_State",
+            "icon": "list"
+          }
+        ]
       },
       {
-        "title": "Weapon Data",
-        "href": "/data/weapons",
-        "icon": "database"
-      },
-      {
-        "title": "Grenade Data",
-        "href": "/data/grenades",
-        "icon": "database"
+        "group": "Data Profiles",
+        "pages": [
+          {
+            "title": "BP_WeaponData",
+            "href": "/data/BP_WeaponData",
+            "icon": "list"
+          }
+        ]
       }
     ]
   }
-]
+  ]
 }

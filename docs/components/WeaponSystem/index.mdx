@@ -1,0 +1,43 @@
+---
+title: WeaponSystem()
+description: Aliquam porta augue ad, aptent lorem accumsan, pellentesque
+---
+
+# Remarks
+
+The Weapon System component is added to both the [BP_ThirdPersonCharacter](/classes/BP_ThirdPersonCharacter) and [BP_MasterWeapon](classes/BP_MasterWeapon) actors and splits the functionality between them. The [BP_ThirdPersonCharacter](/classes/BP_ThirdPersonCharacter) uses the weapon system to equip and unequip weapons as well as trigger the fire events. The [BP_MasterWeapon](/classes/BP_MasterWeapon) uses the to manage weapon data, and actually fire the weapon.
+
+To initialize a weapon on the [BP_ThirdPersonCharacter](/classes/BP_ThirdPersonCharacter) ONLY, you need to select its pistol and/or rifle data:
+
+![Info](/assets/84d132148582a6b57f9dbeef63993e22.png)
+
+---
+
+# Properties
+
+![Properties](/assets/bf9a13614ced09293fee0a625727264a.png)
+
+---
+
+# Functions
+
+- [Rifle_Equip()](components/WeaponSystem/Rifle_Equip)
+- [Rifle_Unequip()](components/WeaponSystem/Rifle_Unequip)
+- [Pistol_Equip()](components/WeaponSystem/Pistol_Equip)
+- [Pistol_Unequip()](components/WeaponSystem/Pistol_Unequip)
+- [Line_Trace()](components/WeaponSystem/Line_Trace)
+- [Fire_FX()](components/WeaponSystem/Fire_FX)
+- [Muzzle_VFX()](components/WeaponSystem/Muzzle_VFX)
+- [Fire_Anim()](components/WeaponSystem/Fire_Anim)
+- [Fire_Montage()](components/WeaponSystem/Fire_Montage)
+- [Impact_VFX()](components/WeaponSystem/Impact_VFX)
+- [Bullet_Trace()](components/WeaponSystem/Bullet_Trace)
+- [Impact_Decal()](components/WeaponSystem/Impact_Decal)
+- [Reload_Anim()](components/WeaponSystem/Reload_Anim)
+- [Reload_Montage()](components/WeaponSystem/Reload_Montage)
+- [CheckAmmo()](components/WeaponSystem/CheckAmmo)
+- [FireCheck()](components/WeaponSystem/FireCheck)
+- [UI()](components/WeaponSystem/UI)
+- [ReloadCheck()](components/WeaponSystem/ReloadCheck)
+- [Empty_FX()](components/WeaponSystem/Empty_FX)
+- [Empty_Montage()](components/WeaponSystem/Empty_Montage)

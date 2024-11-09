@@ -1,0 +1,11 @@
+---
+title: Repossess()
+description: Handles player repossession. When we possess another pawn and then come back to possess this pawn, we need to reset a few things to make sure the player controls and UI once again work normally. This is also called upon first possession and/or first spawn (when the game starts).
+---
+
+# Actions
+
+1. Enables player collision
+2. Turns on the player pawn's visibility
+3. Sets Interactor Active to true on the player character's [Interaction Component](/components/BP_Interactor) 
+4. Turn on Weapon UI based on if the primary or secondary weapon is enabled.
