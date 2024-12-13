@@ -16,6 +16,11 @@
       "id": "tutorials",
       "title": "Tutorials",
       "href": "/tutorials"
+    },
+    {
+      "id": "faq",
+      "title": "FAQs",
+      "href": "/faq"
     }
   ],
   "sidebar": [
