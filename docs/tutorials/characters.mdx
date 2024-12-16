@@ -1,0 +1,46 @@
+---
+title: How to add custom characters
+description: Updated 12/16/2024
+---
+
+![Preview](/assets/tutorials/character-preview.jpg)
+
+To begin adding your own character to the kit, you'll need to make sure that the skeleton you use is compatible with the UE5 mannequin.
+
+Here's a link to a free character that works well with the kit:
+
+https://www.fab.com/listings/8e200050-3158-4762-b297-f785b5b1533d
+
+![Description](https://media.fab.com/image_previews/gallery_images/f6069b95-9161-4dfe-9ef5-0da28044c89e/bf03b665-6872-427c-a38c-0dd42c3f20ca.jpg)
+
+---
+
+To get started, you'll need to navigate to the BP_ThirdPersonCharacter and create a child blueprint.
+
+![Tutorial](/assets/tutorials/67b4387r34bd8723768r3487bdfr876.png)
+
+Rename this new asset to something like "BP_CosmeticCharacter" and move it to a new folder in your content folder. All changes should be placed in it's own folder to not overwrite files when updating the project.
+
+![Tutorial](/assets/tutorials/tb785628745fgbt74bgf7dt4b365t.png)
+
+Now, open this new child blueprint add your character's mesh as a child of the Mesh(CharacterMesh0) component.
+
+![Tutorial](/assets/tutorials/8tg76bt34b634dbt348b7ty.png)
+
+In your construction script, use the "Set Leader Pose Component" to make your new mesh follow the same bones as the default Mesh.
+
+![Tutorial](/assets/tutorials/834bf97834bt98348594n7870.png)
+
+Then on the old Mesh, set the "Visibility Based Anim Tick Option" to "Always Tick Pose and Refresh Bones"
+
+![Tutorial](/assets/tutorials/t34g834gt8934gt83b48tb34897.png)
+
+Then enable "Hidden In Game".
+
+![Tutorial](/assets/tutorials/g497tv34978trv87394vt834.png)
+
+You also set "Visible" to False if you'd like to hide in it in the Blueprint's viewport. After the following these steps, you should be left with a fully working new character mesh.
+
+![Tutorial](/assets/tutorials/34h89nrtg8347g9734bt934g79tg349.png)
+
+If you have a questions, feel free to reach out on Discord: https://discord.gg/7yEzrvrJzd
