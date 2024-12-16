@@ -1,0 +1,78 @@
+---
+title: How to add custom weapons
+description: Updated 12/16/2024
+---
+
+## Overview
+
+All weapons in the kit are based on base meshes from Epic Games' Lyra Sample Game. The rifle, shotgun, and pistol skeletons can be used to add more weapons to the game without requiring unique animations allowing for quick prototyping.
+
+![Tutorial](/assets/tutorials/tgb2458t8y54b8t4o9tb8945bnt9n45.png)
+
+## Rigging a weapon
+
+To get started, you'll need a rigged weapon. Here's a quick tutorial on how to rig a weapon to one of these skeletons using Blender. Some basic knowledge of Blender should make this an easy task. This particular tutorial only took 5 minutes.
+
+<YouTube id="8wRLYsiu_B0" />
+
+## Creating the weapon assets
+
+Once your weapon is rigged, there are a few assets you're going to need to create. First, duplicate the weapon data asset that closely matches the type of weapon you are adding.
+
+<Info>These can be found in /Content/Weapons/Data/Guns</Info>
+
+![Tutorial](/assets/tutorials/3t9g8bg245gtb978g4785gt8459ng87t.png)
+
+Once you create the asset, we'll need to focus on the top section. You'll need to select the Weapon Type.
+
+![Tutorial](/assets/tutorials/3y9b8t2458btg8745bt48o598tghg45.png)
+
+We'll also need to create the Weapon Class. Navigate to the Weapon Classes that have already been created and duplicate one then rename it.
+
+<Info>Found in: /Content/ThirdPerson/Blueprints/WeaponBP/weaponChild/</Info>
+
+![Tutorial](/assets/tutorials/ht809435h8tf04785thf54f37tf845nht8.png)
+
+Once created, assign it to the Weapon Class variable of the Weapon Data Asset we just created.
+
+![Tutorial](/assets/tutorials/i384t089245nt0-4358t093n54t05689y935ny.png)
+
+Then open the Weapon Class, and assign the data asset.
+
+![Tutorial](/assets/tutorials/9347nty9854nt8945nt874nt87458tn40t4595.jpg)
+
+Assign the Weapon Type variable and then navigate to the Weapon Pickup blueprints.
+
+<Info>Found in: /Content/ThirdPerson/Blueprints/WeaponBP/weaponChild/PrimaryWeapons/</Info>
+
+![Tutorial](/assets/tutorials/ofgingp09hn3509gn045ntgf0945ng045.png)
+
+Duplicate one of these blueprints, rename it, then open it. Once it's open, assign the Weapon Class and Weapon Data to the assets we created previously.
+
+![Tutorial](/assets/tutorials/45th8045b8tg4b07985tb0534b098t4b5t98.png)
+
+## Assign proper weapon mesh to blueprints
+
+Next, you'll need open the Weapon Class and Weapon Pickup blueprints that we created and change the skeleton mesh to the new weapon.
+
+![Tutorial](/assets/tutorials/349t7ng24598ntg984752ngt0745t0894750t8.png)
+
+<Info>You will need to click "Open Full Blueprint Editor" (as shown above) to access the viewport and skeletal mesh on both blueprints.</Info>
+
+![Tutorial](/assets/tutorials/9854nht03n45t8o0459t8h4589t.png)
+
+## Finishing up
+
+Finally, in the Weapon Class blueprint (ie: BP_M4) select the Weapon System component and set the rifle data if it's a rifle, and the pistol data if it's a pistol. Both data assets are not required:
+
+![Tutorial](/assets/tutorials/gr9t82b473gt92g43978tg49578tbn98745t98.png)
+
+At this point you'll have a fully functional weapon. You can then open the Weapon Data asset and continue to edit the properties there.
+
+![Tutorial](/assets/tutorials/4837bt08b34t80b4587tn8450nt0874n508tbn40t.png)
+
+You can add the waepon to your level by dragging and dropping in the Weapon Pickup asset (ie: IBP_M4_Pickup)
+
+![Tutorial](/assets/tutorials/8y5t80n54y80tn4509tn0954n0t94598nu45mt9.png)
+
+![Tutorial](/assets/tutorials/594nthy4589ty54bto8945btno9458nt90tn450p.png)
